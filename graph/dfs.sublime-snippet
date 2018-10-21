@@ -1,17 +1,16 @@
 <snippet>
 	<content><![CDATA[
-	void dfs(int x)
+void dfs(int x)
+{
+	visited[x] = true;
+	for(auto& i : G[x])
 	{
-		visited[x]=true;
-
-		for(auto& i : G[x])
+		if(visited[i]==false)
 		{
-			if(visited[i]==false)
-			{
-				dfs(i);
-			}
+			dfs(i);
 		}
 	}
+}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>dfs</tabTrigger>

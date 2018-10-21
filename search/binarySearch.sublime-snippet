@@ -1,20 +1,17 @@
 <snippet>
 	<content><![CDATA[
-	ll bsearch(ll low, ll high)
+ll low = ${1:0};
+ll high = ${2:};
+while (high > low)
+{
+	ll mid = (high + low) / 2;
+	if (${3}mid)
 	{
-
-		if (low >= high) {
-		   return low;
-		}
-
-		ll mid = low + (high-low)/2;
-
-		bool condition =           			//test for set of 2 elements, no yes! if wrong, change mid
-
-		condition ? low = mid : high = mid-1 ;          // maintain the invariant [low,high)
-								// other case, low = mid+1 : high = mid , invariant is (low,high]
-		return bsearch(low,high);
+		low = mid + 1;
+	} else {
+		high = mid;
 	}
+}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>binary-search</tabTrigger>
