@@ -27,11 +27,10 @@ using namespace std;
 int main()
 {
 	std::ios::sync_with_stdio(false);
-	int t;
-	cin >> t;
+	int T;
+	cin >> T;
 	// cin.ignore(); must be there when using getline(cin, s)
-	while (t--)
-	{
+	for (int t = 0; t < T; t++)	{
 		$0
 	}
 	return 0;
