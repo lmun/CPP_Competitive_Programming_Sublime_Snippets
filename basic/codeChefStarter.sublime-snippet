@@ -13,6 +13,8 @@
 #define vll vector<ll>
 #define vvi vector < vi >
 #define pii pair<int,int>
+#define vpii vector<pii >
+#define wgraph vector<vpii >
 #define pll pair<long long, long long>
 #define mod 1000000007
 #define inf 1000000000000000001
